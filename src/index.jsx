@@ -32,7 +32,11 @@ BacktraceClient.initialize({
 
 const routing = (
   <ErrorBoundary>
-    <Router>
+    <Router
+      basename={
+        window.location.hostname === "aato-test.github.io" ? "/sauce_demo" : "/"
+      }
+    >
       <Routes>
         <Route path={ROUTES.LOGIN} element={<Login />} />
         <Route
