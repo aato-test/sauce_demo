@@ -34,8 +34,8 @@ const routing = (
   <ErrorBoundary>
     <Router
       basename={
-        window.location.hostname === "saucelabs.github.io"
-          ? "/sample-app-web"
+        window.location.hostname === "aato-test.github.io"
+          ? "/sauce_demo"
           : "/"
       }
     >
